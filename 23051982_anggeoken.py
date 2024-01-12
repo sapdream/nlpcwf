@@ -8,6 +8,7 @@ Original file is located at
 """
 
 import streamlit as st
+import transformers
 from transformers import pipeline
 
 def create_qa_bot():
