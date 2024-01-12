@@ -7,6 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1pvObLe5sxQvVVD5M-iJsM_2U96zy6IUm
 """
 
+pip install transformers
+pip install streamlit
+
 from transformers import pipeline
 
 def create_qa_bot():
