@@ -43,7 +43,6 @@ def main():
     for question in questions:
         answer = ask_question(context, input_text, qa_bot)
         st.markdown(f"A: {answer}")
-        print()
 
 if __name__ == "__main__":
     main()
