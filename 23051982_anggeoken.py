@@ -30,12 +30,6 @@ def main():
     # Example context and questions
     context = "Hugging Face is an AI research organization that provides state-of-the-art natural language processing models."
 
-    questions = [
-        "What does Hugging Face do?",
-        "Which organization provides natural language processing models?",
-        "Tell me about Hugging Face.",
-    ]
-
     st.title("Question Answering App")
     input_text = st.text_area("Input text", value=" ")
     
