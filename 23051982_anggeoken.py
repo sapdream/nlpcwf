@@ -36,12 +36,18 @@ def main():
         "Tell me about Hugging Face.",
     ]
 
+    st.title("Question Answering App")
+    input_text = st.text_area("Input text", value="")
+    
     # Ask questions and print answers
     for question in questions:
-        answer = ask_question(context, question, qa_bot)
-        print(f"Q: {question}")
+        answer = ask_question(context, input_text, qa_bot)
         print(f"A: {answer}")
         print()
 
 if __name__ == "__main__":
     main()
+
+
+
+
