@@ -37,7 +37,7 @@ def main():
     ]
 
     st.title("Question Answering App")
-    input_text = st.text_area("Input text", value="")
+    input_text = st.text_area("Input text", value=" ")
     
     # Ask questions and print answers
     answer = ask_question(context, input_text, qa_bot)
