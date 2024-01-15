@@ -31,10 +31,10 @@ def main():
     context = "Hugging Face is an AI research organization that provides state-of-the-art natural language processing models."
 
     st.title("Question Answering App")
-    input_text = st.text_area("Input text", value=" ")
+    input_text = st.text_area("Question", value="Enter question here")
     
     # Ask questions and print answers
-    if input_text == " ":
+    if input_text == "Enter question here":
         st.markdown("A:")
     else:
         answer = ask_question(context, input_text, qa_bot)
