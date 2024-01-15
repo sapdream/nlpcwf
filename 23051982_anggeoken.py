@@ -28,7 +28,7 @@ def main():
     qa_bot = create_qa_bot()
 
     # Example context and questions
-    context = "To reset your password, go to forget password link and a code will be sent to your email for more information go to this link: www.google.com."
+    context = "To reset your password, go to the forget password link and a code will be sent to your email for more information go to this link: www.google.com."
 
     st.title("Question Answering App")
     input_text = st.text_area("Question", value="Enter question here")
