@@ -28,7 +28,7 @@ def main():
     qa_bot = create_qa_bot()
 
     # Example context and questions
-    context = "Hugging Face is an AI research organization that provides state-of-the-art natural language processing models."
+    context = "To reset your password, go to forget password link and a code will be sent to your email."
 
     st.title("Question Answering App")
     input_text = st.text_area("Question", value="Enter question here")
