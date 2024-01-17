@@ -28,10 +28,11 @@ def main():
     qa_bot = create_qa_bot()
 
     # Example context and questions
-    context = "Cursed Energy is the primary source of power for all sorcerers and living beings, it is a power source aligned with negative emotions used by sorcerers and cursed spirits to fuel their jujutsu. Negative emotions such as grief and anger are the foundation of cursed energy. These emotions exist to some degree within most humans and as a result, the vast majority of human beings possess cursed energy. If this amount is higher than a certain degree, it grants the person the ability to see cursed spirits. These individuals are known as jujutsu sorcerers and they are very rare among the human race. Cursed energy leaks from the human body, accumulates, and ferments over time until a cursed spirit manifests. This is only the case with non-sorcerers, as sorcerers are trained to control and channel their cursed energy into jujutsu."
+    context = "Cursed Energy is the primary source of power for all sorcerers and living beings, it is a power source aligned with negative emotions used by sorcerers and cursed spirits to fuel their jujutsu. Negative emotions such as grief and anger are the foundation of cursed energy. These emotions exist to some degree within most humans and as a result, the vast majority of human beings possess cursed energy. If these negative emotions is higher than a certain degree, it grants the person the ability to see cursed spirits. These individuals are known as jujutsu sorcerers and they are very rare among the human race. Cursed energy leaks from the human body, accumulates, and ferments over time until a cursed spirit manifests. This is only the case with non-sorcerers, as sorcerers are trained to control and channel their cursed energy into jujutsu."
 
     st.title("Question Answering App")
     input_text = st.text_area("Question", value="Enter question here")
+   
     
     # Ask questions and print answers
     if input_text == "Enter question here":
@@ -39,6 +40,7 @@ def main():
     else:
         answer = ask_question(context, input_text, qa_bot)
         st.markdown(f"A: {answer}")
+        print(f"score: {round(answer['score'], 4)}, start: {answer['start']}, end: {answer['end']}, answer: {answer['answer']}")
 
 if __name__ == "__main__":
     main()
