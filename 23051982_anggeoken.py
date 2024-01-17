@@ -40,7 +40,6 @@ def main():
     else:
         answer = ask_question(context, input_text, qa_bot)
         st.markdown(f"A: {answer}")
-        print(f"score: {round(answer['score'], 4)}, start: {answer['start']}, end: {answer['end']}, answer: {answer['answer']}")
 
 if __name__ == "__main__":
     main()
