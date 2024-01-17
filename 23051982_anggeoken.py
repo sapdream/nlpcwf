@@ -28,7 +28,7 @@ def main():
     qa_bot = create_qa_bot()
 
     # Example context and questions
-    context = "To reset your password, go to the forget password link and a code will be sent to your email, then go to this link: www.google.com."
+    context = "Cursed Energy is the primary source of power for all sorcerers and living beings, it is a power source aligned with negative emotions used by sorcerers and cursed spirits to fuel their jujutsu."
 
     st.title("Question Answering App")
     input_text = st.text_area("Question", value="Enter question here")
