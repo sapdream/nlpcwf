@@ -13,7 +13,7 @@ from transformers import pipeline
 
 def create_qa_bot():
     # Load the question-answering pipeline
-    qa_pipeline = pipeline("question-answering")
+    qa_pipeline = pipeline("question-answering", model='distilbert-base-cased-distilled-squad')
 
     return qa_pipeline
 
